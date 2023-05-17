@@ -5,8 +5,8 @@
  
  - Dans composer.json
  
- "require": {
-    ...
+ - "require": {
+   
     "fullcalendar/fullcalendar": "^4.4"
 }
 
