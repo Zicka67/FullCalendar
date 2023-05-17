@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Calendrier{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('styles/style.css') }}">
+{% endblock %}
+
+{% block body %}
+
+    <div id="calendrier">
+
+    </div>
+{% endblock %}
+
+
+{% block javascripts %}
+
+    <script>
+        window.onload = () => {
+            let calendarElt = document.getElementById('calendrier');
+
+            var calendar = new FullCalendar.Calendar(calendarElt, {
+                initialView: 'dayGridMonth'
+            })
+
+            calendar.updateSize()
+            calendar.setOption('locale', 'fr');
+            calendar.render();
+        };
+
+    </script>
+{% endblock %}
