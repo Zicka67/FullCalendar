@@ -21,11 +21,17 @@
             let calendarElt = document.getElementById('calendrier');
 
             var calendar = new FullCalendar.Calendar(calendarElt, {
-                initialView: 'dayGridMonth'
+                initialView: 'dayGridMonth',
+                locale: "fr",
+                timeZone: "Europe/Paris",
+                headerToolbar : {
+                    start : "prev,next,today",
+                    center : "title",
+                    end : "dayGridMonth,timeGridWeek",
+                }
             })
 
-            calendar.updateSize()
-            calendar.setOption('locale', 'fr');
+            calendar.updateSize();
             calendar.render();
         };
 
