@@ -96,6 +96,11 @@ class Calendar
         return $this->all_day;
     }
 
+    public function getAllDay(): ?bool
+    {
+        return $this->all_day;
+    }
+
     public function setAllDay(bool $all_day): self
     {
         $this->all_day = $all_day;
