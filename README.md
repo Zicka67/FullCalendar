@@ -14,3 +14,6 @@
 
 - JS : {{ encore_entry_script_tags('fullcalendar') }}
 - CSS : {{ encore_entry_link_tags('fullcalendar') }}
+
+- composer require annotations  
+- composer require symfony/form
